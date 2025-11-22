@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import '../models/transaksi.dart';
 import '../models/pengguna.dart';
 import '../services/manajer_penyimpanan.dart';
@@ -22,6 +23,7 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
   @override
   void initState() {
     super.initState();
+    initializeDateFormatting('id_ID', null);
     _muatData();
   }
 

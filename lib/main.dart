@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'pages/login.dart';
 
 void main() {
@@ -19,6 +20,12 @@ class AplikasiApotek extends StatelessWidget {
     return MaterialApp(
       title: 'Apotek Digital',
       debugShowCheckedModeBanner: false,
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [Locale('id', 'ID'), Locale('en', 'US')],
       theme: ThemeData(
         primaryColor: const Color(0xFFFF0067),
         colorScheme: ColorScheme.fromSeed(
