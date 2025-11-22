@@ -60,9 +60,9 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              const Color(0xFFFF0067).withOpacity(0.05),
+              const Color(0xFFFF0067).withValues(alpha: .05),
               Colors.white,
-              const Color(0xFFFF0067).withOpacity(0.1),
+              const Color(0xFFFF0067)..withValues(alpha: 0.1),
             ],
           ),
         ),
@@ -79,7 +79,7 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFFFF0067).withOpacity(0.3),
+                      color: const Color(0xFFFF0067)..withValues(alpha: 0.3),
                       blurRadius: 12,
                       offset: const Offset(0, 4),
                     ),
@@ -99,7 +99,7 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
                       icon: const Icon(Icons.arrow_back_rounded),
                       color: Colors.white,
                       style: IconButton.styleFrom(
-                        backgroundColor: Colors.white.withOpacity(0.2),
+                        backgroundColor: Colors.white..withValues(alpha: 0.2),
                       ),
                     ),
                     const SizedBox(width: 16),
@@ -118,7 +118,7 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
                       icon: const Icon(Icons.refresh_rounded),
                       color: Colors.white,
                       style: IconButton.styleFrom(
-                        backgroundColor: Colors.white.withOpacity(0.2),
+                        backgroundColor: Colors.white..withValues(alpha: 0.2),
                       ),
                     ),
                   ],
@@ -139,7 +139,7 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
                             Container(
                               padding: const EdgeInsets.all(24),
                               decoration: BoxDecoration(
-                                color: const Color(0xFFFF0067).withOpacity(0.1),
+                                color: const Color(0xFFFF0067)..withValues(alpha: 0.1),
                                 shape: BoxShape.circle,
                               ),
                               child: const Icon(
@@ -233,13 +233,13 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
             color: isBatal
-                ? Colors.red.withOpacity(0.3)
-                : const Color(0xFFFF0067).withOpacity(0.2),
+                ? Colors.red..withValues(alpha: 0.3)
+                : const Color(0xFFFF0067)..withValues(alpha: 0.2),
             width: 2,
           ),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.15),
+              color: Colors.grey..withValues(alpha: 0.15),
               blurRadius: 12,
               offset: const Offset(0, 4),
             ),
@@ -260,8 +260,8 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [
-                          const Color(0xFFFF0067).withOpacity(0.2),
-                          const Color(0xFFFF0067).withOpacity(0.1),
+                          const Color(0xFFFF0067)..withValues(alpha: 0.2),
+                          const Color(0xFFFF0067)..withValues(alpha: 0.1),
                         ],
                       ),
                       borderRadius: BorderRadius.circular(14),
@@ -303,8 +303,8 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
                               ),
                               decoration: BoxDecoration(
                                 color: isBatal
-                                    ? Colors.grey.withOpacity(0.2)
-                                    : const Color(0xFFFF0067).withOpacity(0.1),
+                                    ? Colors.grey..withValues(alpha: 0.2)
+                                    : const Color(0xFFFF0067)..withValues(alpha: 0.1),
                                 borderRadius: BorderRadius.circular(6),
                               ),
                               child: Text(
@@ -326,8 +326,8 @@ class _HalamanRiwayatPembelianState extends State<HalamanRiwayatPembelian> {
                               ),
                               decoration: BoxDecoration(
                                 color: isBatal
-                                    ? Colors.red.withOpacity(0.1)
-                                    : Colors.green.withOpacity(0.1),
+                                    ? Colors.red..withValues(alpha: 0.1)
+                                    : Colors.green..withValues(alpha: 0.1),
                                 borderRadius: BorderRadius.circular(6),
                               ),
                               child: Text(

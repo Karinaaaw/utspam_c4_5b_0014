@@ -265,9 +265,9 @@ class _HalamanDetailPembelianState extends State<HalamanDetailPembelian> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              const Color(0xFFFF0067).withOpacity(0.05),
+              const Color(0xFFFF0067)..withValues(alpha: 0.05),
               Colors.white,
-              const Color(0xFFFF0067).withOpacity(0.1),
+              const Color(0xFFFF0067)..withValues(alpha: 0.1),
             ],
           ),
         ),
@@ -284,7 +284,7 @@ class _HalamanDetailPembelianState extends State<HalamanDetailPembelian> {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFFFF0067).withOpacity(0.3),
+                      color: const Color(0xFFFF0067)..withValues(alpha: 0.3),
                       blurRadius: 12,
                       offset: const Offset(0, 4),
                     ),
@@ -305,7 +305,7 @@ class _HalamanDetailPembelianState extends State<HalamanDetailPembelian> {
                       icon: const Icon(Icons.arrow_back_rounded),
                       color: Colors.white,
                       style: IconButton.styleFrom(
-                        backgroundColor: Colors.white.withOpacity(0.2),
+                        backgroundColor: Colors.white..withValues(alpha: 0.2),
                       ),
                     ),
                     const SizedBox(width: 16),
@@ -335,7 +335,7 @@ class _HalamanDetailPembelianState extends State<HalamanDetailPembelian> {
                           borderRadius: BorderRadius.circular(20),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
+                              color: Colors.grey..withValues(alpha: 0.2),
                               blurRadius: 12,
                               offset: const Offset(0, 4),
                             ),
@@ -351,8 +351,8 @@ class _HalamanDetailPembelianState extends State<HalamanDetailPembelian> {
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
                                   colors: [
-                                    const Color(0xFFFF0067).withOpacity(0.2),
-                                    const Color(0xFFFF0067).withOpacity(0.1),
+                                    const Color(0xFFFF0067)..withValues(alpha: 0.2),
+                                    const Color(0xFFFF0067)..withValues(alpha: 0.1),
                                   ],
                                 ),
                                 borderRadius: BorderRadius.circular(20),
@@ -387,8 +387,8 @@ class _HalamanDetailPembelianState extends State<HalamanDetailPembelian> {
                               ),
                               decoration: BoxDecoration(
                                 color: isBatal
-                                    ? Colors.grey.withOpacity(0.2)
-                                    : const Color(0xFFFF0067).withOpacity(0.1),
+                                    ? Colors.grey..withValues(alpha: 0.2)
+                                    : const Color(0xFFFF0067)..withValues(alpha: 0.1),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Text(
@@ -410,8 +410,8 @@ class _HalamanDetailPembelianState extends State<HalamanDetailPembelian> {
                               ),
                               decoration: BoxDecoration(
                                 color: isBatal
-                                    ? Colors.red.withOpacity(0.1)
-                                    : Colors.green.withOpacity(0.1),
+                                    ? Colors.red..withValues(alpha: 0.1)
+                                    : Colors.green..withValues(alpha: 0.1),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Row(
@@ -449,7 +449,7 @@ class _HalamanDetailPembelianState extends State<HalamanDetailPembelian> {
                           borderRadius: BorderRadius.circular(20),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
+                              color: Colors.grey..withValues(alpha: 0.2),
                               blurRadius: 12,
                               offset: const Offset(0, 4),
                             ),

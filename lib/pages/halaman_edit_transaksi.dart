@@ -164,9 +164,9 @@ class _HalamanEditTransaksiState extends State<HalamanEditTransaksi> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              const Color(0xFFFF0067).withOpacity(0.05),
+              const Color(0xFFFF0067)..withValues(alpha: 0.05),
               Colors.white,
-              const Color(0xFFFF0067).withOpacity(0.1),
+              const Color(0xFFFF0067)..withValues(alpha: 0.1),
             ],
           ),
         ),
@@ -183,7 +183,7 @@ class _HalamanEditTransaksiState extends State<HalamanEditTransaksi> {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFFFF0067).withOpacity(0.3),
+                      color: const Color(0xFFFF0067)..withValues(alpha: 0.3),
                       blurRadius: 12,
                       offset: const Offset(0, 4),
                     ),
@@ -196,7 +196,7 @@ class _HalamanEditTransaksiState extends State<HalamanEditTransaksi> {
                       icon: const Icon(Icons.arrow_back_rounded),
                       color: Colors.white,
                       style: IconButton.styleFrom(
-                        backgroundColor: Colors.white.withOpacity(0.2),
+                        backgroundColor: Colors.white..withValues(alpha: 0.2),
                       ),
                     ),
                     const SizedBox(width: 16),
@@ -228,7 +228,7 @@ class _HalamanEditTransaksiState extends State<HalamanEditTransaksi> {
                             borderRadius: BorderRadius.circular(16),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.grey.withOpacity(0.2),
+                                color: Colors.grey..withValues(alpha: 0.2),
                                 blurRadius: 12,
                                 offset: const Offset(0, 4),
                               ),
@@ -244,8 +244,10 @@ class _HalamanEditTransaksiState extends State<HalamanEditTransaksi> {
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight,
                                     colors: [
-                                      const Color(0xFFFF0067).withOpacity(0.2),
-                                      const Color(0xFFFF0067).withOpacity(0.1),
+                                      const Color(0xFFFF0067)
+                                        ..withValues(alpha: 0.2),
+                                      const Color(0xFFFF0067)
+                                        ..withValues(alpha: 0.1),
                                     ],
                                   ),
                                   borderRadius: BorderRadius.circular(12),
@@ -277,9 +279,8 @@ class _HalamanEditTransaksiState extends State<HalamanEditTransaksi> {
                                         vertical: 4,
                                       ),
                                       decoration: BoxDecoration(
-                                        color: const Color(
-                                          0xFFFF0067,
-                                        ).withOpacity(0.1),
+                                        color: const Color(0xFFFF0067)
+                                          ..withValues(alpha: 0.1),
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Text(
@@ -314,7 +315,7 @@ class _HalamanEditTransaksiState extends State<HalamanEditTransaksi> {
                             borderRadius: BorderRadius.circular(16),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.grey.withOpacity(0.2),
+                                color: Colors.grey..withValues(alpha: 0.2),
                                 blurRadius: 12,
                                 offset: const Offset(0, 4),
                               ),
@@ -606,19 +607,16 @@ class _HalamanEditTransaksiState extends State<HalamanEditTransaksi> {
                                       begin: Alignment.topLeft,
                                       end: Alignment.bottomRight,
                                       colors: [
-                                        const Color(
-                                          0xFFFF0067,
-                                        ).withOpacity(0.1),
-                                        const Color(
-                                          0xFFFF0067,
-                                        ).withOpacity(0.05),
+                                        const Color(0xFFFF0067)
+                                          ..withValues(alpha: 0.1),
+                                        const Color(0xFFFF0067)
+                                          ..withValues(alpha: 0.05),
                                       ],
                                     ),
                                     borderRadius: BorderRadius.circular(12),
                                     border: Border.all(
-                                      color: const Color(
-                                        0xFFFF0067,
-                                      ).withOpacity(0.3),
+                                      color: const Color(0xFFFF0067)
+                                        ..withValues(alpha: 0.3),
                                       width: 2,
                                     ),
                                   ),

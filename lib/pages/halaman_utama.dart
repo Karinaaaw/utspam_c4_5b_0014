@@ -99,9 +99,9 @@ class _HalamanUtamaState extends State<HalamanUtama> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              const Color(0xFFFF0067).withOpacity(0.1),
+              const Color(0xFFFF0067)..withValues(alpha: 0.1),
               Colors.white,
-              const Color(0xFFFF0067).withOpacity(0.05),
+              const Color(0xFFFF0067)..withValues(alpha: 0.05),
             ],
           ),
         ),
@@ -121,7 +121,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
                     borderRadius: BorderRadius.circular(24),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFFFF0067).withOpacity(0.3),
+                        color: const Color(0xFFFF0067)..withValues(alpha: 0.3),
                         blurRadius: 20,
                         offset: const Offset(0, 8),
                       ),
@@ -135,7 +135,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
                           Container(
                             padding: const EdgeInsets.all(12),
                             decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.2),
+                              color: Colors.white..withValues(alpha: 0.2),
                               shape: BoxShape.circle,
                             ),
                             child: const Icon(
@@ -152,7 +152,8 @@ class _HalamanUtamaState extends State<HalamanUtama> {
                               color: Colors.white,
                             ),
                             style: IconButton.styleFrom(
-                              backgroundColor: Colors.white.withOpacity(0.2),
+                              backgroundColor: Colors.white
+                                ..withValues(alpha: 0.2),
                             ),
                           ),
                         ],
@@ -306,7 +307,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: warna.withOpacity(0.3),
+              color: warna..withValues(alpha: 0.3),
               blurRadius: 12,
               offset: const Offset(0, 6),
             ),
@@ -318,7 +319,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
             Container(
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.25),
+                color: Colors.white..withValues(alpha: 0.25),
                 shape: BoxShape.circle,
               ),
               child: Icon(ikon, color: Colors.white, size: 32),
@@ -356,7 +357,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.2),
+              color: Colors.grey..withValues(alpha: 0.2),
               blurRadius: 12,
               offset: const Offset(0, 6),
             ),
@@ -372,8 +373,8 @@ class _HalamanUtamaState extends State<HalamanUtama> {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    const Color(0xFFFF0067).withOpacity(0.2),
-                    const Color(0xFFFF0067).withOpacity(0.1),
+                    const Color(0xFFFF0067)..withValues(alpha: 0.2),
+                    const Color(0xFFFF0067)..withValues(alpha: 0.1),
                   ],
                 ),
                 borderRadius: const BorderRadius.only(
@@ -408,7 +409,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
                         vertical: 4,
                       ),
                       decoration: BoxDecoration(
-                        color: const Color(0xFFFF0067).withOpacity(0.1),
+                        color: const Color(0xFFFF0067)..withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Text(

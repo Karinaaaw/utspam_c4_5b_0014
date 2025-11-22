@@ -115,8 +115,8 @@ class _HalamanLoginState extends State<HalamanLogin>
             end: Alignment.bottomLeft,
             colors: [
               const Color(0xFFFF0067),
-              const Color(0xFFFF0067).withOpacity(0.85),
-              const Color(0xFFFF0067).withOpacity(0.7),
+              const Color(0xFFFF0067)..withValues(alpha: 0.85),
+              const Color(0xFFFF0067)..withValues(alpha: 0.7),
             ],
           ),
         ),
@@ -132,11 +132,11 @@ class _HalamanLoginState extends State<HalamanLogin>
                     child: Container(
                       padding: const EdgeInsets.all(24),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.2),
+                        color: Colors.white..withValues(alpha: 0.2),
                         shape: BoxShape.circle,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.2),
+                            color: Colors.black..withValues(alpha: 0.2),
                             blurRadius: 30,
                             spreadRadius: 5,
                           ),
@@ -164,7 +164,7 @@ class _HalamanLoginState extends State<HalamanLogin>
                     'Masuk ke akun Anda untuk melanjutkan',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white..withValues(alpha: 0.9),
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -175,7 +175,7 @@ class _HalamanLoginState extends State<HalamanLogin>
                       borderRadius: BorderRadius.circular(28),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.15),
+                          color: Colors.black..withValues(alpha: 0.15),
                           blurRadius: 25,
                           offset: const Offset(0, 12),
                         ),
@@ -355,7 +355,7 @@ class _HalamanLoginState extends State<HalamanLogin>
                       Text(
                         'Belum punya akun? ',
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.95),
+                          color: Colors.white..withValues(alpha: 0.95),
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
                         ),

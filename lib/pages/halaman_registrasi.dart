@@ -201,8 +201,8 @@ class _HalamanRegistrasiState extends State<HalamanRegistrasi> {
             end: Alignment.bottomRight,
             colors: [
               const Color(0xFFFF0067),
-              const Color(0xFFFF0067).withOpacity(0.8),
-              const Color(0xFFFF0067).withOpacity(0.6),
+              const Color(0xFFFF0067)..withValues(alpha: 0.8),
+              const Color(0xFFFF0067)..withValues(alpha: 0.6),
             ],
           ),
         ),
@@ -216,7 +216,7 @@ class _HalamanRegistrasiState extends State<HalamanRegistrasi> {
                   Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
+                      color: Colors.white..withValues(alpha: 0.2),
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(
@@ -240,7 +240,7 @@ class _HalamanRegistrasiState extends State<HalamanRegistrasi> {
                     'Buat akun untuk mulai berbelanja obat',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white..withValues(alpha: 0.9),
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -251,7 +251,7 @@ class _HalamanRegistrasiState extends State<HalamanRegistrasi> {
                       borderRadius: BorderRadius.circular(24),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
+                          color: Colors.black..withValues(alpha: 0.1),
                           blurRadius: 20,
                           offset: const Offset(0, 10),
                         ),
@@ -371,7 +371,7 @@ class _HalamanRegistrasiState extends State<HalamanRegistrasi> {
                       Text(
                         'Sudah punya akun? ',
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.9),
+                          color: Colors.white..withValues(alpha: 0.9),
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
                         ),
